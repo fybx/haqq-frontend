@@ -8,7 +8,12 @@ html, body {
   height: moz-available;
   height: -webkit-fill-available;
   font-family: "Poppins", sans-serif;
+  background-color: #202020;
   color: #FFFCF8;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
 header {
@@ -16,30 +21,33 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px 50px;
   box-sizing: border-box;
+  backdrop-filter: blur(3px);
+  border-bottom: 1px rgba(239, 239, 239, 0.8117647059) solid;
 }
 
 main #hero {
   height: 100vh;
   height: 100svh;
-  background-image: url("../media/showcase.jpg");
+  background-image: url("../media/showcase.webp");
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 main #hero:before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   backdrop-filter: saturate(1.5) brightness(0.5);
   z-index: 0;
 }
@@ -49,6 +57,31 @@ main #hero h1 {
   z-index: 1;
   padding: 0 50% 0 50px;
   box-sizing: border-box;
+}
+main #desc {
+  display: flex;
+}
+main #desc h1 {
+  margin: 0 15% 0 0;
+}
+main #courses {
+  position: relative;
+  background-color: #202020;
+  background-image: radial-gradient(at 51% 27%, hsl(315, 61%, 14%) 0px, transparent 50%), radial-gradient(at 55% 32%, hsl(32, 61%, 14%) 0px, transparent 50%), radial-gradient(at 27% 42%, hsl(45, 61%, 14%) 0px, transparent 50%), radial-gradient(at 70% 72%, hsl(285, 61%, 14%) 0px, transparent 50%), radial-gradient(at 8% 62%, hsl(89, 61%, 14%) 0px, transparent 50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5vh;
+}
+main #courses:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: saturate(1.5) brightness(1);
+  z-index: 0;
 }
 
 a {
@@ -92,6 +125,39 @@ a:hover {
   .scale {
     font-size: 26px;
   }
+}
+
+.padded {
+  padding: 100px 200px;
+}
+@media (max-width: 1200px) {
+  .padded {
+    padding: 50px 100px;
+  }
+}
+@media (max-width: 768px) {
+  .padded {
+    padding: 25px 50px;
+  }
+}
+
+.card {
+  max-width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
+  padding: 35px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+}
+
+.card-footer {
+  color: #DDD;
 }
 
 /*# sourceMappingURL=index.css.map */

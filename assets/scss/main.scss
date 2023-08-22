@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+  height: 100%;
+  height: fill-available;
+  height: moz-available;
+  height: -webkit-fill-available;
+
+  font-family: 'Poppins', sans-serif;
+  background-color: #202020;
+  color: #FFFCF8;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+.scale {
+  font-size: 16px;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 1281px) and (max-width: 1440px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1441px) {
+    font-size: 26px;
+  }
+}
+
+$topBottomPadding: 100px;
+$leftRightPadding: 200px;
+
+.padded {
+  padding: $topBottomPadding $leftRightPadding;
+
+  @media (max-width: 1200px) {
+    padding: $topBottomPadding / 2 $leftRightPadding / 2;
+  }
+
+  @media (max-width: 768px) {
+    padding: $topBottomPadding / 4 $leftRightPadding / 4;
+  }
+}
+
+a {
+  color: rgba(255, 252, 248, 0.9);
+  text-underline-offset: 2px;
+  &:hover {
+    color: #FFFCF8;
+    text-decoration: 1px solid underline;
+  }
+}

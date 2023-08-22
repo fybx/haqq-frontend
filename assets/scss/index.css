@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  height: 100%;
+  height: fill-available;
+  height: moz-available;
+  height: -webkit-fill-available;
+  font-family: "Poppins", sans-serif;
+  color: #FFFCF8;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 50px;
+  box-sizing: border-box;
+}
+
+main #hero {
+  height: 100vh;
+  height: 100svh;
+  background-image: url("../media/showcase.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+main #hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: saturate(1.5) brightness(0.5);
+  z-index: 0;
+}
+main #hero h1 {
+  color: #FFFCF8;
+  margin: 0;
+  z-index: 1;
+  padding: 0 50% 0 50px;
+  box-sizing: border-box;
+}
+
+a {
+  color: rgba(255, 252, 248, 0.9);
+  text-underline-offset: 2px;
+}
+a:hover {
+  color: #FFFCF8;
+  text-decoration: 1px solid underline;
+}
+
+.scale {
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  .scale {
+    font-size: 16px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .scale {
+    font-size: 18px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .scale {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .scale {
+    font-size: 22px;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .scale {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1441px) {
+  .scale {
+    font-size: 26px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

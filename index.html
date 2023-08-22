@@ -7,6 +7,7 @@
 
     <link href="assets/css/main.css" rel="stylesheet" type="text/css">
     <link href="assets/css/index.css" rel="stylesheet" type="text/css">
+    <script src="assets/scripts/index.js" defer></script>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
 </head>
@@ -14,7 +15,7 @@
 <header class="animate__animated animate__slideInDown">
     <h2 class="scale"><a>FAQ</a></h2>
     <h1 class="scale">Chaincation</h1>
-    <h2 class="scale"><a href="login.html">Log in</a></h2>
+    <h2 class="scale"><a onclick="toggleModal()">Log in</a></h2>
 </header>
 <main>
     <section id="hero" class="padded">
@@ -63,5 +64,17 @@
     </section>
 </main>
 <footer></footer>
+<section id="theDeal" onclick="toggleModal()"></section>
+<section id="loginModal">
+    <h1>Connect your wallet</h1>
+    <p>If you don't have a wallet, you can select a provider and create one now. Learn more</p>
+    <hr>
+    <ul>
+        <li><img alt="" src="https://opensea.io/static/images/logos/metamask-fox.svg">MetaMask</li>
+        <li><img alt="" src="https://opensea.io/static/images/logos/ledgerconnect-alternative.png">Ledger</li>
+        <li><img alt="" src="https://static.opensea.io/logos/walletlink-alternative.png">Coinbase Wallet</li>
+        <li><img alt="" src="https://lh3.googleusercontent.com/uBaatYG20TOMFFUCTEgwtaI9Q6l_Nqr0qKUGQPJHjKnlLDqhwQaQbAvQku4nyH8TVxZKx96RsiFduLrcw2vqqjrr=s48">BitKeep</li>
+    </ul>
+</section>
 </body>
 </html>

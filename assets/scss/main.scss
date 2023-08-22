@@ -70,3 +70,79 @@ a {
     text-decoration: 1px solid underline;
   }
 }
+
+#theDeal {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 9;
+  backdrop-filter: blur(5px) brightness(0.7);
+}
+
+#loginModal {
+  width: 500px;
+  height: 400px;
+  background-color: #202020;
+  border: 1px solid #101010;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px -2px #ffffff9c;
+
+  &:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  hr {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fffcf860;
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 10px;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin: 0 16px 0 0;
+        padding: 8px;
+      }
+
+      &:hover {
+        background-color: #303030;
+      }
+    }
+  }
+}
+
+.visible {
+  display: flex !important;
+}
+
+.modal_open {
+  overflow: hidden;
+}
